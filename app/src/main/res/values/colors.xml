@@ -10,6 +10,8 @@
 
     <color name="app_main_color">#17212B</color>
 
-
+    <color name="blue">#2675EC</color>
+    <color name="pink">#EC26A9</color>
+    <color name="hint_color">#919191</color>
 
 </resources>

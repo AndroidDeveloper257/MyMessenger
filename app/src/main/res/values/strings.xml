@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MyMessenger</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="phone_number_hint">+998 90 123 45 67</string>
+    <string name="phone_number_start">+998</string>
 </resources>

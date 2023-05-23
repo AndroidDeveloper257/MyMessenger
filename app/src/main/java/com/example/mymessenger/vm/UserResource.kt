@@ -1,11 +1,13 @@
 package com.example.mymessenger.vm
 
-sealed class UserResource<T> {
+import com.example.mymessenger.database.entity.UserEntity
 
-    class Loading<T> : UserResource<T>()
+sealed class UserResource {
 
-    class Success<T : Any>(val data: T) : UserResource<T>()
+    object Loading : UserResource()
 
-    class Error<T : Any>(val e: Throwable) : UserResource<T>()
+    data class Success(val userList: ArrayList<UserEntity>) : UserResource()
+
+    data class Error(val e: Throwable) : UserResource()
 
 }

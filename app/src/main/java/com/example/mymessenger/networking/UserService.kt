@@ -5,9 +5,8 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.database.DatabaseReference
 
 interface UserService {
+        fun getUsers(): DatabaseReference
 
-    fun getUsers(): DatabaseReference
-
-    fun addUser(userEntity: UserEntity): Task<Void>
+        fun addUser(userEntity: UserEntity): Task<Void>
 
 }
